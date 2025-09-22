@@ -10,7 +10,7 @@ public class BankAccountMenu {
         // 6. Implement add money, withdraw money, check balance, and exit functionality
         Scanner scan = new Scanner(System.in);
         boolean run = true;
-        int account = 0;
+        double account = 0;
         while (run) {
             System.out.println("\n");
             System.out.println("1. Add Money");
@@ -23,13 +23,13 @@ public class BankAccountMenu {
 
             switch (input) {
                 case 1:
-                    System.out.println("How Much:  ");
+                    System.out.print("How Much:  ");
                     int money = scan.nextInt();
                     account = account + money;
                     break;
 
                 case 2:
-                    System.out.println("How Much:  ");
+                    System.out.print("How Much:  ");
                     money = scan.nextInt();
                     account = account - money;
                     break;
