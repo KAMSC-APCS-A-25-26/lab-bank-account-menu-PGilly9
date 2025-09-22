@@ -25,13 +25,13 @@ public class BankAccountMenu {
             switch (input) {
                 case 1:
                     System.out.print("How Much:  ");
-                    double money = scan.nextInt();
+                    double money = scan.nextDouble();
                     account = account + money;
                     break;
 
                 case 2:
                     System.out.print("How Much:  ");
-                    money = scan.nextInt();
+                    money = scan.nextDouble();
                     account = account - money;
                     break;
 
