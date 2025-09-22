@@ -13,6 +13,7 @@ public class BankAccountMenu {
         double account = 0;
         while (run) {
             System.out.println("\n");
+            System.out.println("--- Bank Account Menu ---");
             System.out.println("1. Add Money");
             System.out.println("2. Withdraw Money");
             System.out.println("3. Check Balance");
@@ -24,7 +25,7 @@ public class BankAccountMenu {
             switch (input) {
                 case 1:
                     System.out.print("How Much:  ");
-                    int money = scan.nextInt();
+                    double money = scan.nextInt();
                     account = account + money;
                     break;
 
